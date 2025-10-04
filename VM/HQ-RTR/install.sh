@@ -6,7 +6,7 @@ echo "L1qued-SH: Копирую папки config файлов..."
 sleep 1
 
 echo "L1qued-SH: Устанавливаю hostname и временной зоны"
-hostnamectl set-hostname hq-rtr.au-team.irpo
+hostnamectl set-hostname hq-rtr.au-team.irpo; exec bash
 timedatectl set-timezone Asia/Yekaterinburg
 
 sleep 1
