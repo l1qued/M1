@@ -2,12 +2,12 @@
 
 Сети:
 
-· HQ-CLI - 1 HQ-Net
-· ISP - 1 NAT, 2 ISP-HQ, 3 ISP-BR
-· HQ-SRV - 1 HQ-Net
-· HQ-RTR - 1 ISP-HQ, 2 HQ-Net
-· BR-RTR - 1 ISP-BR, 2 BR-Net
-· BR-SRV - 1 BR-Net
+HQ-CLI - 1 HQ-Net
+ISP - 1 NAT, 2 ISP-HQ, 3 ISP-BR
+HQ-SRV - 1 HQ-Net
+HQ-RTR - 1 ISP-HQ, 2 HQ-Net
+BR-RTR - 1 ISP-BR, 2 BR-Net
+BR-SRV - 1 BR-Net
 
 ---
 
