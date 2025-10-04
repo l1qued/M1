@@ -11,6 +11,8 @@ hostnamectl set-hostname isp; exec bash
 echo "L1qued-SH: Перезапускаю сеть"
 systemctl restart networking
 
+sleep 3
+
 echo "L1qued-SH: Устанавливаю временную зону"
 timedatectl set-timezone Asia/Yekaterinburg
 
