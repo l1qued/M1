@@ -116,6 +116,7 @@ vim /etc/net/ifaces/enp0s3/options
 	DISABLED=no
 	BOOTPROTO=static
 	NM_CONTROLLED=no
+	CONFIG_IPV4=yes
 ```
 
 ```bash
