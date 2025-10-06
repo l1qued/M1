@@ -1483,3 +1483,5 @@ HQ-CLI
 apt-get update
 apt-get install yandex-browser-stable
 ```
+
+The end!
