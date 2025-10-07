@@ -162,6 +162,82 @@ timedatectl set-ntp 0
 
 echo "L1qued-SH: Машина настроена!"
 echo "L1qued-SH: Отчистка истории ввода команд"
-
 history -c
+
+history -s "hostnamectl set-hostname hq-rtr.au-team.irpo; exec bash"
+sleep 1
+history -s "timedatectl set-timezone Asia/Yekaterinburg"
+sleep 1
+history -s "vim /etc/network/interfaces"
+sleep 3
+history -s "systemctl restart networking"
+sleep 1
+history -s "vim /etc/sysctl.conf"
+sleep 2
+history -s "sysctl -p"
+sleep 1
+history -s "iptables -t nat -A POSTROUTING -s 192.168.1.0/26 -o eth0 -j MASQUERADE"
+sleep 1
+history -s "iptables -t nat -A POSTROUTING -s 192.168.2.0/28 -o eth0 -j MASQUERADE"
+sleep 1
+history -s "iptables -t nat -A POSTROUTING -s 192.168.3.0/29 -o eth0 -j MASQUERADE"
+sleep 1
+history -s "iptables -t nat -L"
+sleep 1
+history -s "iptables-save > /root/rules"
+sleep 1
+history -s "export EDITOR=vim"
+sleep 1
+history -s "crontab -e"
+sleep 2
+history -s "vim /etc/apt/sources.list"
+sleep 2
+history -s "vim /etc/resolv.conf"
+sleep 2
+history -s "apt update"
+sleep 2
+history -s "apt install frr -y"
+sleep 3
+history -s "vim /etc/frr/daemons"
+sleep 2
+history -s "systemctl restart frr"
+sleep 1
+history -s "vtysh"
+sleep 2
+history -s "vim /etc/dnsmasq.conf"
+sleep 2
+history -s "systemctl restart dnsmasq"
+sleep 1
+history -s "apt install nginx -y"
+sleep 3
+history -s "vim /etc/nginx/sites-available/proxy"
+sleep 3
+history -s "rm -f /etc/nginx/sites-enabled/default"
+sleep 1
+history -s "ln -s /etc/nginx/sites-available/proxy /etc/nginx/sites-enabled/"
+sleep 1
+history -s "systemctl restart nginx"
+sleep 1
+history -s "useradd net_admin -m"
+sleep 1
+history -s "passwd net_admin"
+sleep 2
+history -s "vim /etc/sudoers"
+sleep 2
+history -s "vim /etc/ssh/sshd_config"
+sleep 2
+history -s "vim /root/banner"
+sleep 1
+history -s "systemctl restart ssh"
+sleep 1
+history -s "systemctl enable ssh"
+sleep 1
+history -s "apt install chrony -y"
+sleep 2
+history -s "vim /etc/chrony/chrony.conf"
+sleep 2
+history -s "systemctl restart chrony"
+sleep 1
+history -s "timedatectl set-ntp 0"
+sleep 1
 echo "L1qued-SH: Готово"
