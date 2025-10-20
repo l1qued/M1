@@ -1,5 +1,5 @@
 Методичка по настройке сетевой инфраструктуры
-От @l1queds
+Нашли ошибку? Писать @l1qeuds
 
 Сети:
 
@@ -318,7 +318,6 @@ vim /etc/net/ifaces/enp0s3.200/options
 ```bash
 systemctl restart network
 ip -c a
-ping 192.168.2.1
 ```
 
 ---
